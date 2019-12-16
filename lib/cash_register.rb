@@ -10,11 +10,12 @@ class CashRegister
     @total = 0
     @discount = discount
     @array_items = []
-    @last_transaction = {}
+    @last_transaction = nil 
   end
   
   def add_item(title, price, quantity = 1)
-    self.last_transaction = { "#{title}" => price *quantity }
+    # self.last_transaction = { "#{title}" => price *quantity }
+    self.last_transaction = price *quantity
     i = 1 
     while i <= quantity do 
       self.array_items << title
@@ -43,7 +44,7 @@ class CashRegister
   end
   
   def void_last_transaction
-    binding.pry
+    self.total = self.total - self.last_transaction
   end
   
   

@@ -43,13 +43,11 @@ class CashRegister
   
   
   def items
-    
     self.array_items
-    
   end
   
   def void_last_transaction
-    
+    binding.pry
   end
   
   

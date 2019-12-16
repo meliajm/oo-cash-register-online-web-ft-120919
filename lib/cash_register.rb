@@ -21,12 +21,12 @@ class CashRegister
     
     i = 1 
     while i <= quantity do 
-      @array_items << title
+      self.array_items << title
       i+=1
     end
     
     self.total += price * quantity
-    @array_items
+    self.array_items
     
   end
   

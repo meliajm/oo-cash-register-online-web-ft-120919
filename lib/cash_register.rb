@@ -10,11 +10,11 @@ class CashRegister
     @total = 0
     @discount = discount
     @array_items = []
-    @last_transaction = nil
+    @last_transaction = {}
   end
   
   def add_item(title, price, quantity = 1)
-    
+    self.last_transaction = title
     i = 1 
     while i <= quantity do 
       self.array_items << title

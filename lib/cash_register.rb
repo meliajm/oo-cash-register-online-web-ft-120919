@@ -30,7 +30,7 @@ class CashRegister
     
   end
   
-  binding.pry
+  
   def apply_discount()
     if discount != 0
        

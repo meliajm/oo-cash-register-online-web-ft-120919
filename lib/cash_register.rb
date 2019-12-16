@@ -2,7 +2,7 @@ require 'pry'
 
 class CashRegister
   
-  attr_accessor :total
+  attr_accessor :total, :employee_discount
   # attr_reader :total 
   # :last_transaction
   
@@ -15,9 +15,6 @@ class CashRegister
   #   @total
   # end
   
-  def discount(employee_discount = 20)
-    employee_discount
-  end
   
   def add_item(title, price, quantity = 1)
     self.total += price * quantity

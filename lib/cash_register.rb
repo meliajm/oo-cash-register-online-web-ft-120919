@@ -26,6 +26,7 @@ class CashRegister
     
     self.total += price * quantity
     @array_items
+    binding.pry
   end
   
   
@@ -41,7 +42,7 @@ class CashRegister
   
   
   def items(a, b, c)
-    binding.pry
+    
     self.add_item(a, b, c)
     
   end

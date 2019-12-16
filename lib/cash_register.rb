@@ -42,9 +42,9 @@ class CashRegister
   end
   
   
-  def items(a, b, c)
+  def items
     
-    self.add_item(a, b, c)
+    self.add_item
     
   end
   

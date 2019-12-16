@@ -2,13 +2,13 @@ require 'pry'
 
 class CashRegister
   
-  attr_accessor :total, :employee_discount
+  attr_accessor :total, :discount
   # attr_reader :total 
   # :last_transaction
   
-  def initialize(employee_discount = 0)
+  def initialize(discount = 0)
     @total = 0
-    @employee_discount = employee_discount
+    @discount = discount
   end
   
   # def total
@@ -22,9 +22,9 @@ class CashRegister
   
   
   def apply_discount()
-    if employee_discount != 0
+    if discount != 0
        
-      self.total = (100 - employee_discount) / 100.0 * self.total
+      self.total = (100 - discount) / 100.0 * self.total
       "After the discount, the total comes to $#{self.total.to_i}."
     else
       "There is no discount to apply."

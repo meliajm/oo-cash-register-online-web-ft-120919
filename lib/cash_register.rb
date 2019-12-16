@@ -18,9 +18,9 @@ class CashRegister
 
   def add_item(title, price, quantity = 1)
     array_items = []
-    i = 0 
-    while i < quantity do 
-      array_items << title * quantity
+    i = 1 
+    while i <= quantity do 
+      array_items << title
     end
     
     self.total += price * quantity

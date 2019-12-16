@@ -34,9 +34,8 @@ class CashRegister
   end
   
   
-  def items(a, b)
-    a
-    b 
+  def items()
+    
     binding.pry
   end
   

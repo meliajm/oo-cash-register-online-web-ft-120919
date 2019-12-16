@@ -2,16 +2,16 @@ require 'pry'
 
 class CashRegister
   
-  attr_reader :total 
+  # attr_reader :total 
   # :last_transaction
   
   def initialize(total = 0, employee_discount = 0)
     @total = total
   end
   
-  # def total
-  #   @total
-  # end
+  def total
+    @total
+  end
   
   def discount(employee_discount = 20)
     employee_discount

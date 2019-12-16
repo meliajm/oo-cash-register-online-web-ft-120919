@@ -14,7 +14,7 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
-    self.last_transaction = title
+    self.last_transaction = { :title => price *quantity }
     i = 1 
     while i <= quantity do 
       self.array_items << title

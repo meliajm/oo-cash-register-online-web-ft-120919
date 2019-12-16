@@ -16,7 +16,7 @@ class CashRegister
   # end
   
   def discount(employee_discount = 20)
-    self.employee_discount
+    employee_discount
   end
   
   def add_item(title, price, quantity = 1)

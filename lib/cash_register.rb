@@ -40,8 +40,8 @@ class CashRegister
   end
   
   
-  def items()
-    
+  def items(a, b, c)
+    self.add_item(a, b, c)
     binding.pry
   end
   

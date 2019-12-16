@@ -15,8 +15,7 @@ class CashRegister
   #   @total
   # end
   
-  array_items << ("tomato" * 2).split("")
-  
+
   def add_item(title, price, quantity = 1)
     array_items = []
     array_items << title * quantity

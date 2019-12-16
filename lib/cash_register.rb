@@ -21,7 +21,6 @@ class CashRegister
     i = 0 
     while i < quantity do 
       array_items << title * quantity
-      
     end
     
     self.total += price * quantity

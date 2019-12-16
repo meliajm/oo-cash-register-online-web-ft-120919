@@ -44,7 +44,7 @@ class CashRegister
   
   def items
     
-    self.add_item
+    self.array_items
     
   end
   

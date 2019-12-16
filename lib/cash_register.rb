@@ -26,10 +26,10 @@ class CashRegister
     
     self.total += price * quantity
     @array_items
-    binding.pry
+    
   end
   
-  
+  binding.pry
   def apply_discount()
     if discount != 0
        

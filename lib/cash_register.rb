@@ -23,6 +23,7 @@ class CashRegister
       array_items << title * quantity
       
     end
+    
     self.total += price * quantity
     array_items
   end

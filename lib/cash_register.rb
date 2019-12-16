@@ -33,7 +33,7 @@ class CashRegister
   
   
   def items
-    
+    add_item
   end
   
   def void_last_transaction
